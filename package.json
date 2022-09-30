@@ -1,0 +1,27 @@
+{
+  "name": "printer-server",
+  "version": "1.0.1",
+  "author": "stephen.tseng@huawei.com",
+  "description": "Printer Tool - a Windows program normally running in the background for printing purpose of the digital catering project",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "escpos": "^3.0.0-alpha.6",
+    "escpos-network": "^3.0.0-alpha.5",
+    "escpos-serialport": "^3.0.0-alpha.4",
+    "escpos-usb": "^3.0.0-alpha.4",
+    "events": "^3.3.0",
+    "express": "^4.18.1",
+    "get-pixels": "^3.3.3",
+    "iconv-lite": "^0.6.3",
+    "ini": "^3.0.1",
+    "jpeg-js": "^0.4.4",
+    "png-to-jpeg": "^1.0.1",
+    "qr-image": "^3.2.0",
+    "serialport": "^10.4.0",
+    "usb": "^1.9.2"
+  }
+}
