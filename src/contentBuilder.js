@@ -17,7 +17,7 @@ class ContentBuilder {
     printer.lineFeed(2);
 
     printer.setPrintModes(true, false, false);
-    printer.setCharacterSize(2, 1);
+    printer.setCharacterSize(1, 1);
 
     printer.setAlignment(EscPosPrinter.ALIGN_LEFT); // 居左
 
@@ -53,7 +53,7 @@ class ContentBuilder {
     printer.lineFeed(1);
     printer.setAlignment(EscPosPrinter.ALIGN_LEFT);
     printer.setPrintModes(false, false, false);
-    printer.setCharacterSize(2, 1);
+    printer.setCharacterSize(1, 1);
     printer.appendText(EscPosPrinter.DASHED_LINE);
     printer.lineFeed(1);
 
@@ -94,7 +94,7 @@ class ContentBuilder {
       printer.columnWidthWithAlignment(0, EscPosPrinter.ALIGN_RIGHT)
     );
     printer.printInColumns("Qty", "Stock Description", "Price", "Total");
-    printer.setPrintModes(true, false, false);
+    printer.setPrintModes(false, false, false);
     printer.appendText(EscPosPrinter.DASHED_LINE);
     printer.lineFeed(1);
 
@@ -250,7 +250,8 @@ class ContentBuilder {
       printer.columnWidthWithAlignment(0, EscPosPrinter.ALIGN_LEFT)
     );
     printer.printInColumns("Qty", "Stock Description");
-    printer.setPrintModes(false, true, false);
+      printer.setPrintModes(false, true, false);
+      printer.setCharacterSize(2.5, 0.8);
 
     // 菜数量 菜名称
     printer.printInColumns(checfContent.food.num, checfContent.food.name);
