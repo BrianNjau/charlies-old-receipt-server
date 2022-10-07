@@ -22,11 +22,16 @@ const utils = require('./src/utils')
 const { log, toHex } = utils
 
 const print = function (device, printer, content) {
+  // 打印4行空白行
   printer.lineFeed(4)
+  // 
   printer.cutPaper(false)
+  // 将打印机命令转换成16进制
   const buf = Buffer.from(printer.orderData, 'hex')
+  // 写入打印机
   device.write(buf)
   log(`Print bill success`, { prefix: '[SUCCESS]', details: JSON.stringify(content) })
+  // 关闭打印机连接
   device.close()
 }
 

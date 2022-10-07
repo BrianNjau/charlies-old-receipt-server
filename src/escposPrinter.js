@@ -1,5 +1,4 @@
 const iconv = require('iconv-lite');
-const qrimage = require("qr-image");
 class EscPosPrinter {
     MAX_COLUMNS = 6;      // Maximum columns for printing in columns functio
 
