@@ -1,6 +1,6 @@
 {
-  "name": "printer-server",
-  "version": "1.0.1",
+  "name": "old-node-escpos-server",
+  "version": "22.10.18",
   "author": "stephen.tseng@huawei.com",
   "description": "Printer Tool - a Windows program normally running in the background for printing purpose of the digital catering project",
   "scripts": {
